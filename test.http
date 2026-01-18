@@ -1,0 +1,9 @@
+POST http://localhost:8081/upload
+Content-Type: multipart/form-data; boundary=boundary
+
+--boundary
+Content-Disposition: form-data; name="file"; filename="test.txt"
+Content-Type: text/plain
+
+Hello Mini Drive
+--boundary--

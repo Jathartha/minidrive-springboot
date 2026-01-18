@@ -1,0 +1,3 @@
+### List all uploaded files
+GET http://localhost:8081/api/files
+Accept: application/json
