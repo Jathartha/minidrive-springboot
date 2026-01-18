@@ -36,5 +36,12 @@ A backend-focused Mini Drive application built using Spring Boot to understand r
 6. Open browser at:
    http://localhost:8081/
 
+## Deployment Note
+
+This project uses local filesystem storage for uploaded files.
+In a production setup, this can be replaced with cloud storage
+such as AWS S3 with minimal changes.
+
+   
 ## Why this project?
 Built to gain hands-on experience with backend API design, file handling in Spring Boot.
