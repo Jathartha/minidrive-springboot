@@ -30,4 +30,4 @@ A backend-focused Mini Drive application built using Spring Boot to understand r
 - JWT-based Authentication
 
 ## Why this project?
-Built to gain hands-on experience with backend API design, file handling, and debugging real production issues in Spring Boot.
+Built to gain hands-on experience with backend API design, file handling in Spring Boot.
