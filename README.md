@@ -33,8 +33,6 @@ A backend-focused Mini Drive application built using Spring Boot to understand r
 3. Make sure Java 17+ is installed
 4. Run `MinidriveApplication` file
 5. Application starts on port **8081**
-6. Open browser at:
-   http://localhost:8081/
 
 ## Deployment Note
 
