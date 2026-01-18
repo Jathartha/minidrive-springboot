@@ -26,8 +26,15 @@ A backend-focused Mini Drive application built using Spring Boot to understand r
 - DELETE `/api/delete/{filename}`
 - PUT `/api/rename`
 
-## Future Enhancement
-- JWT-based Authentication
+## Run Locally
+
+1. Clone the repository
+2. Open in IntelliJ / any IDE
+3. Make sure Java 17+ is installed
+4. Run `MinidriveApplication`
+5. Application starts on port **8081**
+6. Open browser at:
+   http://localhost:8081/
 
 ## Why this project?
 Built to gain hands-on experience with backend API design, file handling in Spring Boot.
