@@ -29,9 +29,9 @@ A backend-focused Mini Drive application built using Spring Boot to understand r
 ## Run Locally
 
 1. Clone the repository
-2. Open in IntelliJ / any IDE
+2. Open in IntelliJ or any IDE
 3. Make sure Java 17+ is installed
-4. Run `MinidriveApplication`
+4. Run `MinidriveApplication` file
 5. Application starts on port **8081**
 6. Open browser at:
    http://localhost:8081/
