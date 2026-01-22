@@ -14,8 +14,14 @@ public class HomeController {
                 <title>Mini Drive</title>
             </head>
             <body>
-
+<!-- logout -->
                 <h2>Mini Drive</h2>
+                <form action="/api/auth/logout" method="post">
+                        <button type="submit">Logout</button>
+                    </form>
+                
+                    <hr>
+                
 
                 <!-- UPLOAD -->
                 <form method="post"
