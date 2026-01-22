@@ -60,8 +60,6 @@ The project was developed incrementally to demonstrate real-world backend concep
 1. Clone the repository
 2. Open the project in IntelliJ IDEA or any other IDE
 3. Run `MiniDriveApplication` file
-4. Access the application at:
-http://localhost:8081/auth
 
 
 ---
@@ -69,10 +67,6 @@ http://localhost:8081/auth
 ## Database
 
 - Uses H2 in-memory database
-- H2 Console available at:
-  http://localhost:8081/h2
-
-  
 (Database configuration is defined in `application.properties`)
 
 ---
@@ -103,12 +97,5 @@ This project demonstrates:
 - REST API design
 - Incremental feature development
 
-It is designed to be simple and extensible.
-
----
-
-## Author
-
-Jathartha Das
 
 
