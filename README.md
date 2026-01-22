@@ -1,31 +1,143 @@
-# Mini Drive – Spring Boot File Management System
+# Mini Drive – Secure File Management System (Spring Boot)
 
-A backend-focused Mini Drive application built using Spring Boot to understand real-world backend engineering concepts.
+Mini Drive is a backend-focused file storage application built using Spring Boot.  
+It provides authentication, session-based access control, and basic file management operations.
+
+The project was developed incrementally to demonstrate real-world backend concepts such as REST APIs, authentication,  and secure file handling.
+
+---
 
 ## Features
-- File upload (multipart)
-- File download
-- File delete
-- File rename
-- List stored files
-- Timestamp tracking
-- RESTful API design
-- Simple UI using HTML + JavaScript fetch
+
+### Authentication & Session Management
+- User registration and login
+- Passwords stored securely using BCrypt hashing
+- Session-based authentication using HttpSession
+- Logout functionality with session invalidation
+- Protected file operations (only authenticated users can access)
+
+### File Management
+- Upload files
+- List uploaded files
+- Download files
+- Delete files
+- Rename files
+
+### UI
+- Simple HTML-based UI served directly from controllers
+- Authentication page (login & register)
+
+---
 
 ## Tech Stack
+
 - Java 17
 - Spring Boot
-- REST APIs
-- HTML + JavaScript
+- Spring Web
+- Spring Data JPA
+- H2 In-Memory Database
+- BCrypt Password Encoder
 - Maven
 
-## API Endpoints
-- POST `/api/upload`
-- GET `/api/files`
-- GET `/api/download/{filename}`
-- DELETE `/api/delete/{filename}`
-- PUT `/api/rename`
+---
+
+## Project Structure
+
+com.minidrive.minidrive
+│
+├── controller
+│ ├── HomeController # File upload/download UI
+│ ├── AuthController # Register, login, logout APIs
+│ └── AuthPageController # Login & registration UI
+│
+├── entity
+│ ├── User # User entity
+│ └── FileInfo # File metadata entity
+│
+├── repository
+│ ├── UserRepository
+│ └── FileRepository
+│
+├── dto
+│ ├── RegisterRequest
+│ └── LoginRequest
+│
+├── service
+│ └── FileService # Core file handling logic
+│
+└── MiniDriveApplication
 
 
-## Why this project?
-Built to gain hands-on experience with backend API design, file handling, and debugging real production issues in Spring Boot.
+---
+
+## Authentication Flow
+
+1. User registers via the authentication page
+2. Password is encrypted using BCrypt before storing in the database
+3. User logs in using valid credentials
+4. On successful login:
+   - User identity is stored in HttpSession
+   - User is redirected to the file management page
+5. All file-related endpoints are protected and require an active session
+6. Logout invalidates the session and redirects back to the authentication page
+
+
+---
+
+## How to Run Locally
+
+1. Clone the repository
+2. Open the project in IntelliJ IDEA or any other IDE
+3. Run `MiniDriveApplication` file
+4. Access the application at:
+http://localhost:8081/auth
+
+
+---
+
+## Database
+
+- Uses H2 in-memory database
+- H2 Console available at:
+  http://localhost:8081/h2
+
+  
+(Database configuration is defined in `application.properties`)
+
+---
+
+## Design Decisions
+
+- Session-based authentication was chosen for simplicity and clarity
+- BCrypt is used to ensure secure password storage
+- HTML is served directly from controllers to avoid frontend framework complexity
+- File storage is handled locally for ease of development and testing
+
+---
+
+## Future Enhancements
+
+- User-isolated file storage (each user sees only their own files)
+- JWT-based authentication
+- Improved UI ( Used only HTML as of now)
+
+---
+
+## Why This Project?
+
+This project demonstrates:
+- Practical use of Spring Boot for backend development
+- Authentication and session handling
+- Secure password management
+- REST API design
+- Incremental feature development
+
+It is designed to be simple and extensible.
+
+---
+
+## Author
+
+Jathartha Das
+
+
