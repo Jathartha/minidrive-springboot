@@ -41,35 +41,6 @@ The project was developed incrementally to demonstrate real-world backend concep
 
 ---
 
-## Project Structure
-
-com.minidrive.minidrive
-│
-├── controller
-│ ├── HomeController # File upload/download UI
-│ ├── AuthController # Register, login, logout APIs
-│ └── AuthPageController # Login & registration UI
-│
-├── entity
-│ ├── User # User entity
-│ └── FileInfo # File metadata entity
-│
-├── repository
-│ ├── UserRepository
-│ └── FileRepository
-│
-├── dto
-│ ├── RegisterRequest
-│ └── LoginRequest
-│
-├── service
-│ └── FileService # Core file handling logic
-│
-└── MiniDriveApplication
-
-
----
-
 ## Authentication Flow
 
 1. User registers via the authentication page
