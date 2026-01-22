@@ -26,8 +26,6 @@ A backend-focused Mini Drive application built using Spring Boot to understand r
 - DELETE `/api/delete/{filename}`
 - PUT `/api/rename`
 
-## Future Enhancements
-- JWT-based Authentication
 
 ## Why this project?
 Built to gain hands-on experience with backend API design, file handling, and debugging real production issues in Spring Boot.
