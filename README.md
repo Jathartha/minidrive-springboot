@@ -10,7 +10,7 @@ The project was developed incrementally to demonstrate real-world backend concep
 ## Features
 
 ### Authentication & Session Management
-- User registration and login
+- User registration & login
 - Passwords stored securely using BCrypt hashing
 - Session-based authentication using HttpSession
 - Logout functionality with session invalidation
